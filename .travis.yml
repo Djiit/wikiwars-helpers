@@ -9,7 +9,7 @@ branches:
 
 script:
   - yarn test
-  - yarn e2e
+  - xvfb-run yarn e2e
   - yarn build
 
 deploy:
