@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.0.0/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.e49f4a591fa65b54f67dafc58f87497a.js"
+  "/wikiwars-helpers/precache-manifest.7bcf38847a54f084dc3fc0017c599e85.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "ww-helpers"});
