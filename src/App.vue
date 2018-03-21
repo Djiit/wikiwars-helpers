@@ -1,29 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <img src="./assets/logo.png" alt="Wikiwars">
+      </div>
+      <div class="navbar-menu">
+        <router-link to="/" class="navbar-item">Dashboard</router-link>
+        <router-link to="/preview" class="navbar-item">Preview</router-link>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <router-view/>
+      </div>
+    </section>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+  @import "~bulma/css/bulma.css"
 </style>
